@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Best Girls - Wuthering Waves</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #e2e8f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 10px rgba(129, 140, 248, 0.2);
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(129, 140, 248, 0.2);
+            border-color: rgba(148, 163, 184, 0.3);
+        }
+
+        .rank-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .image-container img {
+            transform: scale(1.05);
+        }
+
+        .info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .character-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #f1f5f9;
+            margin-bottom: 5px;
+        }
+
+        .character-title {
+            font-size: 0.9em;
+            color: #94a3b8;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+            
+            .image-container {
+                height: 300px;
+            }
+        }
+
+        /* Loading animation */
+        .card {
+            animation: fadeIn 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+        .card:nth-child(5) { animation-delay: 0.5s; }
+        .card:nth-child(6) { animation-delay: 0.6s; }
+        .card:nth-child(7) { animation-delay: 0.7s; }
+        .card:nth-child(8) { animation-delay: 0.8s; }
+        .card:nth-child(9) { animation-delay: 0.9s; }
+        .card:nth-child(10) { animation-delay: 1.0s; }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Top 10 Best Girls</h1>
+        <p class="subtitle">Wuthering Waves Character Ranking</p>
+        
+        <div class="gallery">
+            <!-- Card 1: Shorekeeper -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">1</div>
+                    <img src="https://placehold.co/400x600/4F46E5/FFFFFF?text=Shorekeeper" alt="Shorekeeper">
+                </div>
+                <div class="info">
+                    <div class="character-name">Shorekeeper</div>
+                    <div class="character-title">My Wife</div>
+                </div>
+            </div>
+
+            <!-- Card 2: Carthapillia -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">2</div>
+                    <img src="https://placehold.co/400x600/7C3AED/FFFFFF?text=Carthapillia" alt="Carthapillia">
+                </div>
+                <div class="info">
+                    <div class="character-name">Cartethyia</div>
+                    <div class="character-title">My second wife</div>
+                </div>
+            </div>
+
+            <!-- Card 3: Chisa -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">3</div>
+                    <img src="https://placehold.co/400x600/EC4899/FFFFFF?text=Chisa" alt="Chisa">
+                </div>
+                <div class="info">
+                    <div class="character-name">Chisa</div>
+                    <div class="character-title">Passionate Researcher</div>
+                </div>
+            </div>
+
+            <!-- Card 4: Zani -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">4</div>
+                    <img src="https://placehold.co/400x600/F97316/FFFFFF?text=Zani" alt="Zani">
+                </div>
+                <div class="info">
+                    <div class="character-name">Zani</div>
+                    <div class="character-title">Enigmatic Warrior</div>
+                </div>
+            </div>
+
+            <!-- Card 5: Cantarella -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">5</div>
+                    <img src="https://placehold.co/400x600/8B5CF6/FFFFFF?text=Cantarella" alt="Cantarella">
+                </div>
+                <div class="info">
+                    <div class="character-name">Cantarella</div>
+                    <div class="character-title">Melodic Fighter</div>
+                </div>
+            </div>
+
+            <!-- Card 6: Pink Nanami -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">6</div>
+                    <img src="https://placehold.co/400x600/F472B6/FFFFFF?text=Pink+Nanami" alt="Nanami">
+                </div>
+                <div class="info">
+                    <div class="character-name">Nanami</div>
+                    <div class="character-title">Vibrant Navigator</div>
+                </div>
+            </div>
+
+            <!-- Card 7: Iuno -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">7</div>
+                    <img src="https://placehold.co/400x600/10B981/FFFFFF?text=Iuno" alt="Iuno">
+                </div>
+                <div class="info">
+                    <div class="character-name">Iuno</div>
+                    <div class="character-title">Radiant Strategist</div>
+                </div>
+            </div>
+
+            <!-- Card 8: Changli -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">8</div>
+                    <img src="https://placehold.co/400x600/EF4444/FFFFFF?text=Changli" alt="Changli">
+                </div>
+                <div class="info">
+                    <div class="character-name">Changli</div>
+                    <div class="character-title">Fiery Protector</div>
+                </div>
+            </div>
+
+            <!-- Card 9: Female Rover -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">9</div>
+                    <img src="https://placehold.co/400x600/6366F1/FFFFFF?text=Female+Rover" alt="Female Rover">
+                </div>
+                <div class="info">
+                    <div class="character-name">Rover</div>
+                    <div class="character-title">The Resonator</div>
+                </div>
+            </div>
+
+            <!-- Card 10: Phoebe -->
+            <div class="card">
+                <div class="image-container">
+                    <div class="rank-badge">10</div>
+                    <img src="https://placehold.co/400x600/A855F7/FFFFFF?text=Phoebe" alt="Phoebe">
+                </div>
+                <div class="info">
+                    <div class="character-name">Phoebe</div>
+                    <div class="character-title">Loyal Companion</div>
+                </div>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 40px; color: #94a3b8; font-size: 0.9em;">
+            * Replace placeholder images with actual character artwork
+        </p>
+    </div>
+
+    <script>
+        // Add click event to cards for potential expansion
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                const name = this.querySelector('.character-name').textContent;
+                const rank = this.querySelector('.rank-badge').textContent;
+                console.log(`Clicked on #${rank}: ${name}`);
+            });
+        });
+
+        // Add smooth scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
